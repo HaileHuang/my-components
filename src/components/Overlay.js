@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import '../style/Overlay.css';
 
 class Overlay extends Component {
+  
   static propTypes = {
     active: PropTypes.bool,
     children: PropTypes.node,
@@ -15,7 +16,7 @@ class Overlay extends Component {
       active ? 
       <div className="hp-backdrop" onClick={onClick} style={{zIndex: zIndex}}>
         { children }
-      </div> : <div></div>
+      </div> : null
     )
   }
 }

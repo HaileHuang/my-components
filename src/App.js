@@ -7,7 +7,7 @@ import Modal from './components/Modal'
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {active1: false};
+    this.state = {active1: false, active2: false};
   }
 
   handleOpen1 = () => {
@@ -16,6 +16,14 @@ class App extends Component {
 
   handleClose1 = () => {
     this.setState({active1: false});
+  }
+
+  handleOpen2 = () => {
+    this.setState({active2: true});
+  }
+
+  handleClose2 = () => {
+    this.setState({active2: false});
   }
 
   render() {
@@ -32,6 +40,16 @@ class App extends Component {
         >
           <div style={{height: 200, width: 200}}>
             <p>this is 1 Modal</p>
+            <button onClick={this.handleOpen2}>this is 2</button>
+          </div>
+        </Modal>
+
+        <Modal
+          active={this.state.active2}
+          onOverlayClick={this.handleClose2}
+        >
+          <div style={{height: 100, width: 100}}>
+            <p>this is 2 Modal</p>
           </div>
         </Modal>
 
