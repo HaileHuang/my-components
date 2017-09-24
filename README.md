@@ -26,4 +26,11 @@ let lists = ['哈哈', '哈哈','哈哈', '哈哈','哈哈', '哈哈','哈哈', 
   lists = {lists}
 />
 ```
+### SearchSelect
+
+```jsx
+<SearchSelect {...this.props}/>
+```
+
+
 
