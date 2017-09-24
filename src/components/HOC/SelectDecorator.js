@@ -27,8 +27,8 @@ const selectDecorator = (WrappedComponent) => {
 
     onClickHeader() {
       this.setState({
-        searchInputShow: true,
-        listShow: true,
+        searchInputShow: !this.state.searchInputShow,
+        listShow: !this.state.listShow,
       })
     }
 

@@ -1,0 +1,61 @@
+.select-input {
+  position: relative;
+  width: 250px;
+}
+
+.select-input input {
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 28px;
+  width: 250px;
+}
+
+.triangle-down {
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid #888;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  position: absolute;
+  right: 3px;
+  bottom: 12px;
+}
+
+.search-input {
+  width: 250px;
+}
+
+.search-input input {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 28px;
+  width: 250px;
+}
+
+.list-options {
+  width: 254px;
+}
+
+.list-options ul {
+  list-style: node;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.list-options li {
+  padding-left: 10px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.list-options li:hover {
+  background-color: #5897fb;
+  color: #fff;
+}

@@ -14,11 +14,12 @@ class SearchInput extends Component {
   render() {
     const { keyword, onSearch, searchInputShow } = this.props;
     return (
-      <div>
+      <div className="search-input">
       {
         searchInputShow ?
         <input
           type="text"
+          autoFocus
           value={keyword}
           onChange={this.handleChange.bind(this)}
         /> : null

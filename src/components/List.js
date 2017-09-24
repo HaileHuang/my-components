@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import '../style/StretchNav.css';
+import '../style/SearchSelect.css';
 
 
 class List extends Component {
@@ -13,7 +13,7 @@ class List extends Component {
   render() {
     const { options, listShow } = this.props;
     return (
-      <div>
+      <div className="list-options">
       {
         listShow ? 
         <ul>
