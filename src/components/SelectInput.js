@@ -5,6 +5,10 @@ import '../style/SearchSelect.css';
 class SelectInput extends Component {
 
   static displayName = 'SelectInput';
+
+  static defaultProps = {
+    selectedItem: '',
+  }
   
   render() {
     const { selectedItem, onClickHeader, placeholder } = this.props;

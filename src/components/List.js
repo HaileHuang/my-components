@@ -6,8 +6,15 @@ class List extends Component {
 
   static displayName = 'List';
 
+  static defaultProps = {
+    listShow: true,
+    options: [],
+  }
+
   handleClick(item) {
-    this.props.handleSelect(item);
+    if(this.props.handleSelect) {
+      this.props.handleSelect(item);
+    }
   }
 
   render() {

@@ -5,7 +5,6 @@ import SearchSelect from './components/SearchSelect';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {active1: false, active2: false};
   }
 
   render() {
@@ -15,7 +14,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <SearchSelect />     
+        <SearchSelect /> 
       </div>
     );
   }

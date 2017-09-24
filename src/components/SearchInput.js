@@ -6,6 +6,11 @@ class SearchInput extends Component {
 
   static displayName = 'SearchInput';
   
+  static defaultProps = {
+    searchInputShow: true,
+    keyword: '',
+  }
+
   handleChange(e) {
     let value = e.target.value;
     this.props.onSearch(value);
