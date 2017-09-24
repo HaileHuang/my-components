@@ -4,19 +4,19 @@ import '../style/StretchNav.css';
 
 class Selector extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      expand: true,
-      needMore: false,
-      activeItem: null,
-    };
-  }
+  static displayName = 'Selector';
 
+  getChildrens() {
+    return React.Children.map(this.props.children, (child) => {
+      if (!child) { return; }
+      return React.cloneElement(child, {...this.props});
+    });
+  }
   render() {
-    console.log('a');
     return (
-      <div>{'haha'}</div>
+      <div>
+      {this.getChildrens()}
+      </div>
     )
   }
 }
